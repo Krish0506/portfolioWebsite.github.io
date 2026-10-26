@@ -6,6 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="styles.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -59,7 +60,54 @@
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Experience</h2>
-								<div class="image-container">
+
+								<!-- Career Assembly Line -->
+									<section class="al" id="career-assembly" aria-labelledby="al-heading">
+										<div class="al-head">
+											<div class="al-head-copy">
+												<p class="al-eyebrow"><span class="al-pulse-dot" aria-hidden="true"></span>Career architecture // assembly line</p>
+												<h3 class="al-title" id="al-heading">Data Pipeline <span>Assembly Line</span></h3>
+												<p class="al-sub">Four stations, one continuous pipeline. Hover a module to preview a phase — click to pin its telemetry and inspect the impact shipped at each stop.</p>
+											</div>
+											<div class="al-readout" aria-label="Pipeline status">
+												<div><span>Phases</span><strong>04</strong></div>
+												<div><span>Status</span><strong class="al-live"><i aria-hidden="true"></i>Online</strong></div>
+												<div><span>Flow</span><strong>Nominal</strong></div>
+											</div>
+										</div>
+
+										<div class="al-stage" id="al-stage">
+											<div class="al-frame" aria-hidden="true">
+												<span class="al-corner al-corner--tl"></span>
+												<span class="al-corner al-corner--tr"></span>
+												<span class="al-corner al-corner--bl"></span>
+												<span class="al-corner al-corner--br"></span>
+											</div>
+											<svg id="al-svg" class="al-svg" viewBox="0 0 1280 580" aria-hidden="true" focusable="false"></svg>
+											<div class="al-hud" aria-hidden="true">
+												<span class="al-hud-tl">SYS.ARCH // 04 STATIONS</span>
+												<span class="al-hud-tr">DATA FLOW // LIVE</span>
+												<span class="al-hud-bl">&#9664; INGEST</span>
+												<span class="al-hud-br">OUTPUT &#9654;</span>
+											</div>
+											<div class="al-scanline" aria-hidden="true"></div>
+										</div>
+
+										<div class="al-tabs" id="al-tabs" role="tablist" aria-label="Career stations"></div>
+
+										<section class="al-panel" id="al-panel" role="tabpanel" aria-live="polite" aria-label="Station details">
+											<div class="al-panel-inner">
+												<p class="al-panel-kicker">Initializing assembly line&hellip;</p>
+											</div>
+										</section>
+
+										<p class="al-hint">Hover to preview &middot; click to pin &middot; use &#8592; &#8594; to step through stations</p>
+
+										<noscript><p class="al-noscript">Enable JavaScript to explore the interactive career assembly line.</p></noscript>
+									</section>
+
+								<h3 class="major al-archive-title">Field Notes &amp; Earlier Chapters</h3>
+								<div class="image-container al-archive">
 									
 									<div>
 										<img src="images/MS.jpg" alt="Image 4">
@@ -394,6 +442,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="app.js"></script>
 
 	</body>
 </html>
